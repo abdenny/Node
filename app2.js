@@ -10,3 +10,9 @@ let myServer = http.createServer((request, response) => {
 myServer.listen(3000, () => {
   console.log('listening on 3000');
 });
+
+var fs = require('fs');
+fs.unlink('/tmp/hello', err => {
+  if (err) throw err;
+  console.log('successfully deleted /tmp/hello');
+});
