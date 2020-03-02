@@ -3,6 +3,7 @@ const app = express();
 app.use(require('./controllers/index'));
 app.use(require('./controllers/aboutus'));
 app.use(require('./controllers/schools'));
+app.use(require('./controllers/cars'));
 
 app.use(express.static('public'));
 
