@@ -7,6 +7,8 @@ app.set('view engine', 'ejs');
 //set routes
 app.use(require('./controllers/index.js'));
 app.use(require('./controllers/speakers.js'));
+app.use(require('./controllers/feedback.js'));
+
 app.listen(3000, () => {
   console.log('listening port 3000');
 });
